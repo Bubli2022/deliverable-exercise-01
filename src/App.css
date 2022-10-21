@@ -1,0 +1,67 @@
+#root {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 2rem;
+   text-align: center;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.card {
+   position: relative;
+   top: 216px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 1rem;
+   box-shadow: 3px 3px 10px rgb(62 62 62);
+   margin: 1rem auto;
+   border-radius: 8px;
+   background-color: white;
+   width: 450px;
+   height: 136px;
+}
+
+.fa-circle-chevron-right {
+   border-radius: 50%;
+   border: none;
+   position: absolute;
+   top: 99px;
+   right: 4px;
+   font-size: 2rem;
+   box-shadow: 3px 3px 10px rgb(62 62 62);
+}
+
+.fa-quote-left {
+   position: absolute;
+   top: 1px;
+   right: 415px;
+   font-size: 2rem;
+}
+
+button {
+   border: none;
+}
+
+h4 {
+   padding: 0.5rem 0rem;
+   position: relative;
+   right: 20px;
+   font-size: 1rem;
+   text-align: right;
+}
+
+p {
+   position: absolute;
+   top: -28px;
+   right: 13px;
+   width: 379px;
+   height: 95px;
+   font-size: 12px;
+   margin: 2rem 1rem 0;
+}

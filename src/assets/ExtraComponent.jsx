@@ -1,6 +1,6 @@
 import React from "react"
 
-const ExtraComponent = ({ colors, randomColor, changeQuotes }) => {
+const ExtraComponent = ({ changeQuotes, colors, randomColor }) => {
    return (
       <div>
          <button onClick={changeQuotes} style={{ color: colors[randomColor] }}>

@@ -1,9 +1,8 @@
 import React, { useState } from "react"
 import quotes from "../quotes.json"
+import ExtraComponent from "./ExtraComponent"
 
 const QuoteBox = () => {
-   console.log(quotes)
-
    const randomIndex = Math.floor(Math.random() * quotes.length)
 
    const [index, setIndex] = useState(randomIndex)
@@ -30,9 +29,11 @@ const QuoteBox = () => {
             <h4>{quotes[index].author}</h4>
          </p>
 
-         <button onClick={changeQuotes} style={{ color: colors[randomColor] }}>
-            <i class="fa-solid fa-circle-chevron-right"></i>
-         </button>
+         <ExtraComponent
+            changeQuotes={changeQuotes}
+            colors={colors}
+            randomColor={randomColor}
+         />
       </div>
    )
 }
